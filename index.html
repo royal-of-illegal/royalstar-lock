@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Locker - Web UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>App Locker</h2>
+        <p>This tool allows you to lock apps with a password for security.</p>
+        <button id="requestPermission">Request Permission</button>
+        
+        <div id="appList">
+            <h3>Select an App to Lock:</h3>
+            <select id="appSelector">
+                <option value="">--Select an App--</option>
+                <option value="com.example.app1">Example App 1</option>
+                <option value="com.example.app2">Example App 2</option>
+                <option value="com.example.app3">Example App 3</option>
+            </select>
+        </div>
+        
+        <input type="password" id="password" placeholder="Set Password">
+        <button id="setPassword">Set Password</button>
+    </div>
+</body>
+</html>
